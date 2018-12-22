@@ -1,0 +1,25 @@
+version: 2.1
+orbs:
+  aws-ecr: circleci/aws-ecr@0.0.4
+
+jobs:
+  test:
+    docker:
+      - image: microsoft/dotnet:2.1-sdk
+    steps:
+      - checkout
+      - run:
+          name: Tests
+          command: dotnet test test/CptLog.Api.Log.Tests/CptLog.Api.Log.Tests.csproj
+
+workflows:
+  build-deploy-dev:
+    jobs:
+      - test
+      - aws-ecr/build_and_push_image:
+          region: eu-west-1
+          account-url: 874444545532.dkr.ecr.eu-west-1.amazonaws.com
+          repo: cpt-log/api/log
+          tag: $CIRCLE_BUILD_NUM
+          requires:
+            - test
