@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Tests
-          command: dotnet test test/CptLog.Api.Log.Tests/CptLog.Api.Log.Tests.csproj
+          command: dotnet test test/CptLog.Api.Record.Tests/CptLog.Api.Record.Tests.csproj
 
 workflows:
   build-deploy-dev:
@@ -23,3 +23,6 @@ workflows:
           tag: $CIRCLE_BUILD_NUM
           requires:
             - test
+          filters:
+            branches:
+              only: master

@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{775A9E93-66AF-434B-BF09-B5AB9F3DF3AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CptLog.Api.Log", "src\CptLog.Api.Log\CptLog.Api.Log.csproj", "{59E3CB4F-56E4-454B-86B7-F25BA92D4631}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CptLog.Api.Record", "src\CptLog.Api.Record\CptLog.Api.Record.csproj", "{59E3CB4F-56E4-454B-86B7-F25BA92D4631}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EAD143F2-7B0B-497D-98C7-5A1273B4AEA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CptLog.Api.Log.Tests", "src\CptLog.Api.Log.Tests\CptLog.Api.Log.Tests.csproj", "{49732886-A462-48E5-A96C-75529E34F8DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CptLog.Api.Record.Tests", "src\CptLog.Api.Record.Tests\CptLog.Api.Record.Tests.csproj", "{49732886-A462-48E5-A96C-75529E34F8DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
